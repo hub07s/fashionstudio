@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+    .about-section { background: #333; color: #fff; padding: 50px 0; text-align: center; }
+    .container { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 12px #ccc; padding: 40px; }
+    h1, h2 { margin-bottom: 20px; }
+    .team { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+    .card { background: #f4f4f4; border-radius: 8px; box-shadow: 0 2px 8px #ddd; padding: 24px; max-width: 270px; text-align: center; }
+    .card img { border-radius: 50%; width: 100px; height: 100px; object-fit: cover; }
+    .card .title { font-size: 1.1em; color: #666; margin: 12px 0; }
+
+    @media (max-width: 700px) {
+      .container { padding: 15px; }
+      .team { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="about-section">
+    <h1>About Us</h1>
+    <p>Our mission is to offer modern fashion with quality and style.<br>Committed to sustainability, creativity and excellent service.</p>
+  </div>
+  <div class="container">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane">
+        <h3>Jane Doe</h3>
+        <p class="title">Founder & CEO</p>
+        <p>Passionate about creative fashion and crafting unique experiences.</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mike">
+        <h3>Mike Ross</h3>
+        <p class="title">Art Director</p>
+        <p>Designs elegant collections and curates our seasonal runway looks.</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="John">
+        <h3>John Doe</h3>
+        <p class="title">Head Designer</p>
+        <p>The heart of our brand's signature style and innovation.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
