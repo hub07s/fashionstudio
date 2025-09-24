@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="0" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="brand">
+                    <h2><img src="logo.jpg" width="80px"></h2>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#shop" class="nav-link">Shop</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="cart-btn" id="cartBtn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#shop" class="mobile-nav-link">Shop</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active">
+                <img src="img100.avif" alt="Fashion Model in Denim">
+                <div class="hero-content">
+                    <h1>Define Your Style</h1>
+                    <p>Discover premium fashion that speaks to your unique personality</p>
+                    <button class="btn btn--primary hero-cta">Shop Now</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="img200.avif" alt="Fashion Model in Pink Dress">
+                <div class="hero-content">
+                    <h1>Elegant Evening Wear</h1>
+                    <p>Sophisticated pieces for your most memorable moments</p>
+                    <button class="btn btn--primary hero-cta">Explore Collection</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="img300.avif" alt="Male Model in Casual Wear">
+                <div class="hero-content">
+                    <h1>Casual Comfort</h1>
+                    <p>Effortless style for everyday adventures</p>
+                    <button class="btn btn--primary hero-cta">Shop Men's</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="Dresses">
+                    <div class="logo">
+                        <i class="logo"></i>
+                    </div>
+                    <h3>Dresses</h3>
+                    <p>Evening wear, casual and formal dresses</p>
+                </div>
+                <div class="category-card" data-category="Tops">
+                    <div class="logo">
+                        <i class="logo"></i>
+                    </div>
+                    <h3>Tops</h3>
+                    <p>T-shirts, blouses, sweaters and shirts</p>
+                </div>
+                <div class="category-card" data-category="Pants">
+                    <div class="logo">
+                        <i class="logo"></i>
+                    </div>
+                    <h3>Pants</h3>
+                    <p>Jeans, trousers and casual pants</p>
+                </div>
+                <div class="category-card" data-category="Suits">
+                    <div class="logo">
+                        <i class="logo"></i>
+                    </div>
+                    <h3>Suits</h3>
+                    <p>Formal suits and blazers</p>
+                </div>
+                <div class="category-card" data-category="Shoes">
+                    <div class="logo">
+                        <i class="logo"></i>
+                    </div>
+                    <h3>Shoes</h3>
+                    <p>Heels, flats, sneakers and boots</p>
+                </div>
+                <div class="category-card" data-category="Accessories">
+                    <div class="logo">
+                        <i class="logo"></i>
+                    </div>
+                    <h3>Accessories</h3>
+                    <p>Bags, jewelry and scarves</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="shop" class="products">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Dresses">Dresses</button>
+                    <button class="filter-btn" data-filter="Tops">Tops</button>
+                    <button class="filter-btn" data-filter="Pants">Pants</button>
+                    <button class="filter-btn" data-filter="Suits">Suits</button>
+                    <button class="filter-btn" data-filter="Shoes">Shoes</button>
+                    <button class="filter-btn" data-filter="Accessories">Accessories</button>
+                </div>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Fashion Studio</h2>
+                    <p>We believe fashion should be accessible, sustainable, and expressive of your unique personality. Our carefully curated collections blend timeless elegance with contemporary trends, ensuring you always look and feel your best.</p>
+                    <p>From casual everyday wear to sophisticated evening attire, each piece in our collection is selected for its quality, style, and versatility. We're committed to providing exceptional fashion that empowers you to express your individuality.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Free Shipping</h4>
+                            <p>On orders over</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-undo"></i>
+                            <h4>Easy Returns</h4>
+                            <p>30-day return policy</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Premium Quality</h4>
+                            <p>Carefully curated pieces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img2.avif" alt="Professional Fashion">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="form-control">
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fashion Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal hidden" id="cartModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="modal-close" id="closeCartModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be dynamically loaded here -->
+                </div>
+                <div class="cart-empty hidden" id="cartEmpty">
+                    <p>Your cart is empty</p>
+                    <button class="btn btn--primary" id="continueShopping">Continue Shopping</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <strong>Total: $<span id="cartTotal">0</span></strong>
+                </div>
+                <button class="btn btn--primary btn--full-width" id="checkoutBtn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal hidden" id="productModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content product-modal-content">
+            <button class="modal-close" id="closeProductModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="product-modal-body">
+                <div class="product-modal-image">
+                    <img id="productModalImage" src="" alt="">
+                </div>
+                <div class="product-modal-info">
+                    <h3 id="productModalName"></h3>
+                    <p class="product-modal-price">$<span id="productModalPrice"></span></p>
+                    <p id="productModalDescription"></p>
+                    <div class="product-modal-actions">
+                        <div class="quantity-controls">
+                            <label>Quantity:</label>
+                            <div class="quantity-input">
+                                <button class="quantity-btn" id="decreaseQty">-</button>
+                                <input type="number" id="productQuantity" value="1" min="1">
+                                <button class="quantity-btn" id="increaseQty">+</button>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary btn--full-width" id="addToCartModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
